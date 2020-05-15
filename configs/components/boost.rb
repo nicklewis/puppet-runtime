@@ -11,6 +11,7 @@ component "boost" do |pkg, settings, platform|
     pkg.apply_patch 'resources/patches/boost/Fix-bootstrap-build-for-solaris-10.patch'
     pkg.apply_patch 'resources/patches/boost/force-SONAME-option-for-solaris.patch'
     pkg.apply_patch 'resources/patches/boost/solaris-pthread-data.patch'
+    pkg.apply_patch 'resources/patches/boost/handle-ssl-errors.patch'
   end
 
   if platform.is_cisco_wrlinux?
