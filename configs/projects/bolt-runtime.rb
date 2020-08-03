@@ -211,6 +211,9 @@ project 'bolt-runtime' do |proj|
 
   # Non-windows specific components
   unless platform.is_windows?
+    proj.component 'rubygem-bootsnap'
+    proj.component 'rubygem-msgpack'
+
     # C Augeas + deps
     proj.component 'augeas'
     proj.component 'libxml2'
